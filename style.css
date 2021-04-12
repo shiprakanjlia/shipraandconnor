@@ -77,6 +77,10 @@ footer {
     font-size:18;
     text-decoration: none;
     color: #E7D698;
+    
+    /*https://stackoverflow.com/questions/7245896/link-using-z-index-cant-be-clicked-even-though-its-on-top-in-both-firefox-i*/
+    position:relative;
+    z-index:999 !important;
 }
 
 
