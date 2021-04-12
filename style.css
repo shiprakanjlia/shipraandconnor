@@ -72,8 +72,9 @@ footer {
     padding:0;
     padding-bottom: 2rem;
     text-align:center;
-    font-family:"Avenir";
+    font-family:"Century Schoolbook";
     font-style:normal;
+    font-size:18;
     text-decoration: none;
     color: #E7D698;
 }
