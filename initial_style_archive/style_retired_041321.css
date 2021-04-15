@@ -1,0 +1,224 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.logo img
+{
+    width: 500px;
+    height: auto;
+    padding-top: 4rem;
+}
+
+.headerimg
+{   display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+}
+
+/* from https://www.w3schools.com/howto/howto_css_images_side_by_side.asp */
+
+.row {
+    display: flex;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.column {
+  /*flex: 33.33%; */
+    flex: 50%;
+    padding-top: 2.5rem;
+}
+
+.row_review {
+    display: flex;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.column_review {
+  /*flex: 33.33%; */
+    flex: 50%;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+.para_review {
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+
+footer {
+  padding: 6rem;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Menu bar*/
+/*https://csswizardry.com/2011/01/create-a-centred-horizontal-navigation/ */
+
+
+.nav{
+    /*border:1px solid #ccc;*/
+    list-style:none;
+    margin:0;
+    padding:0;
+    padding-bottom: 2rem;
+    text-align:center;
+    font-family:"Century Schoolbook";
+    font-style:normal;
+    font-size:18;
+    text-decoration: none;
+    color: #E7D698;
+    
+    /*https://stackoverflow.com/questions/7245896/link-using-z-index-cant-be-clicked-even-though-its-on-top-in-both-firefox-i*/
+    position:relative;
+    z-index:999 !important;
+}
+
+
+
+.nav a {  
+   display:inline-block;
+    /* space between menu items */
+    padding:10px;
+  color: #E7D698;
+  text-decoration: none;
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+  color: #829FBF;
+    text-decoration: none;
+}
+
+.nav li{
+    /* display:inline;*/
+    
+    /* Lower the menu bar */
+    display: inline-block;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 0px;
+}
+
+/*slide beach pic in*/
+
+@keyframes slidein {
+  0%   { 
+ transform: translateX(150%); 		
+ }
+ 100% { 
+ transform: translateX(0%); 
+ }
+}
+#landing {
+	animation-name:slidein;
+	animation-duration:1.5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count:1;
+}
+
+/*slide beach text in*/
+
+@keyframes slidein_text {
+  0%   { 
+ transform: translateX(-150%); 		
+ }
+ 100% { 
+ transform: translateX(-50%); /* changed this (from 0) after changing overlay method */
+ }
+}
+#landing_text {
+	animation-name:slidein_text;
+	animation-duration:1.5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count:1;
+}
+
+/*https://www.w3docs.com/snippets/css/how-to-position-one-image-on-top-of-another-in-html-css.html*/
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image1 {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image2 {
+  /*position: absolute;
+  top: 280px;
+  left:70px;  previous overlay method */
+    
+/* new overlay method https://stackoverflow.com/questions/50274708/responsive-squared-images-with-overlapping-one-in-the-middle */    
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 0%);
+}
+
+/* fade in save the date https://medium.com/cloud-native-the-gathering/how-to-use-css-to-fade-in-and-fade-out-html-text-and-pictures-f45c11364f08*/
+.fade-in {
+  animation: fadeIn ease 1.5s;
+  -webkit-animation: fadeIn ease 1.5s;
+  -moz-animation: fadeIn ease 1.5s;
+  -o-animation: fadeIn ease 1.5s;
+  -ms-animation: fadeIn ease 1.5s;
+}@keyframes fadeIn {
+  0% {
+    opacity:.25;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:.25;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:.25;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:.25;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:.25;
+  }
+  100% {
+    opacity:1;
+}
+    
+    

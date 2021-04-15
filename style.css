@@ -4,6 +4,15 @@
     padding: 0;
 }
 
+p.centertext{
+    padding-top: 8rem;
+    text-align: center;
+    font-family:"Lao MN";
+    font-style:normal; 
+    font-size:30;
+    color: #E7D698;
+}
+
 .logo img
 {
     width: 500px;
@@ -72,11 +81,12 @@ footer {
     padding:0;
     padding-bottom: 2rem;
     text-align:center;
-    font-family:"Century Schoolbook";
-    font-style:normal;
-    font-size:18;
+    font-family:"Lao MN";
+    font-style:normal; 
+    font-size:16;
     text-decoration: none;
-    color: #E7D698;
+    /*color: #E7D698;*/
+    color: #576A56;
     
     /*https://stackoverflow.com/questions/7245896/link-using-z-index-cant-be-clicked-even-though-its-on-top-in-both-firefox-i*/
     position:relative;
@@ -89,13 +99,15 @@ footer {
    display:inline-block;
     /* space between menu items */
     padding:10px;
-  color: #E7D698;
+  color: #576A56;
+    /*color: #E7D698;*/
   text-decoration: none;
 }
 
 /* Change the color of links on hover */
 .nav a:hover {
-  color: #829FBF;
+  /*color: #829FBF;*/
+    color: #E7D698;
     text-decoration: none;
 }
 
@@ -108,6 +120,11 @@ footer {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 0px;
+}
+
+/*https://www.digitalocean.com/community/tutorials/css-gradient-borders-pure-css*/
+.nav li.active{
+    border-bottom: 1px solid #576A56;
 }
 
 /*slide beach pic in*/
@@ -172,14 +189,16 @@ footer {
 
 /* fade in save the date https://medium.com/cloud-native-the-gathering/how-to-use-css-to-fade-in-and-fade-out-html-text-and-pictures-f45c11364f08*/
 .fade-in {
-  animation: fadeIn ease 1.5s;
-  -webkit-animation: fadeIn ease 1.5s;
-  -moz-animation: fadeIn ease 1.5s;
-  -o-animation: fadeIn ease 1.5s;
-  -ms-animation: fadeIn ease 1.5s;
-}@keyframes fadeIn {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
   0% {
-    opacity:.25;
+    opacity:0;
   }
   100% {
     opacity:1;
@@ -188,7 +207,7 @@ footer {
 
 @-moz-keyframes fadeIn {
   0% {
-    opacity:.25;
+    opacity:0;
   }
   100% {
     opacity:1;
@@ -197,7 +216,7 @@ footer {
 
 @-webkit-keyframes fadeIn {
   0% {
-    opacity:.25;
+    opacity:0;
   }
   100% {
     opacity:1;
@@ -206,7 +225,7 @@ footer {
 
 @-o-keyframes fadeIn {
   0% {
-    opacity:.25;
+    opacity:0;
   }
   100% {
     opacity:1;
@@ -215,10 +234,9 @@ footer {
 
 @-ms-keyframes fadeIn {
   0% {
-    opacity:.25;
+    opacity:0;
   }
   100% {
     opacity:1;
 }
-    
     
