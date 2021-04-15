@@ -61,7 +61,12 @@ p.centertext{
 }
 
 footer {
-  padding: 6rem;
+    padding-top: 40rem;
+  padding-bottom: 1rem;
+    text-align: center;
+    font-family: "Laos MN";
+    font-size:12;
+    color: #E5CA6C;
 }
 
 .center {
@@ -79,11 +84,12 @@ footer {
     list-style:none;
     margin:0;
     padding:0;
+    padding-top:5rem;
     padding-bottom: 2rem;
     text-align:center;
     font-family:"Lao MN";
     font-style:normal; 
-    font-size:20;
+    font-size:30;
     text-decoration: none;
     /*color: #E7D698;*/
     color: #E5CA6C;
