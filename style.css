@@ -86,7 +86,7 @@ footer {
     font-size:16;
     text-decoration: none;
     /*color: #E7D698;*/
-    color: #576A56;
+    color: #E5CA6C;
     
     /*https://stackoverflow.com/questions/7245896/link-using-z-index-cant-be-clicked-even-though-its-on-top-in-both-firefox-i*/
     position:relative;
@@ -99,7 +99,7 @@ footer {
    display:inline-block;
     /* space between menu items */
     padding:10px;
-  color: #576A56;
+  color: #E5CA6C;
     /*color: #E7D698;*/
   text-decoration: none;
 }
@@ -107,7 +107,7 @@ footer {
 /* Change the color of links on hover */
 .nav a:hover {
   /*color: #829FBF;*/
-    color: #E7D698;
+    color: #D59D44;
     text-decoration: none;
 }
 
@@ -124,7 +124,7 @@ footer {
 
 /*https://www.digitalocean.com/community/tutorials/css-gradient-borders-pure-css*/
 .nav li.active{
-    border-bottom: 1px solid #576A56;
+    border-bottom: 1px solid #E5CA6C;
 }
 
 /*slide beach pic in*/
@@ -189,11 +189,11 @@ footer {
 
 /* fade in save the date https://medium.com/cloud-native-the-gathering/how-to-use-css-to-fade-in-and-fade-out-html-text-and-pictures-f45c11364f08*/
 .fade-in {
-  animation: fadeIn ease 3s;
-  -webkit-animation: fadeIn ease 3s;
-  -moz-animation: fadeIn ease 3s;
-  -o-animation: fadeIn ease 3s;
-  -ms-animation: fadeIn ease 3s;
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
 }
 
 @keyframes fadeIn {
