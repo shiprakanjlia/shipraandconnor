@@ -254,7 +254,10 @@ footer {
         url('./content/transfonter.org-20210416-055250_LaoMN/LaoMN.woff2') format('woff2'),
         url('./content/transfonter.org-20210416-055250_LaoMN/LaoMN.woff') format('woff'),
         url('LaoMN.ttf') format('truetype')
-        url('./content/transfonter.org-20210416-055250_LaoMN/LaoMN.svg#LaoMN') format('svg');
+        
+        /*https://stackoverflow.com/questions/27158639/font-face-not-working-on-ios*/
+        /*url('./content/transfonter.org-20210416-055250_LaoMN/LaoMN.svg#LaoMN') format('svg');*/
+        url('./content/transfonter.org-20210416-055250_LaoMN/LaoMN.svg') format('svg');
     font-weight: 300;
     font-style: normal;
     /*font-display: swap;*/
