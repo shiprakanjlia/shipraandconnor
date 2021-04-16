@@ -4,6 +4,7 @@
     src: url('LaoMN.eot?#iefix') format('embedded-opentype'),
         url('LaoMN.woff2') format('woff2'),
         url('LaoMN.woff') format('woff'),
+        url('LaoMN.ttf') format('truetype'),
         url('LaoMN.svg#LaoMN') format('svg');
     font-weight: 300;
     font-style: normal;
