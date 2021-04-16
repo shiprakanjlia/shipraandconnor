@@ -253,15 +253,19 @@ footer {
     
     src: url('./content/transfonter.org-20210416-055250_LaoMN/LaoMN.eot?#iefix') format('embedded-opentype'),
         
-        url('./content/transfonter.org-20210416-055250_LaoMN/LaoMN.woff2') format('woff2'),
+        url('content/transfonter.org-20210416-055250_LaoMN/LaoMN.woff2') format('woff2'),
         
-        url('./content/transfonter.org-20210416-055250_LaoMN/LaoMN.woff') format('woff'),
+        url('content/transfonter.org-20210416-055250_LaoMN/LaoMN.woff') format('woff'),
         
-        url('./content/transfonter.org-20210416-055250_LaoMN/LaoMN.ttf') format('truetype')
+        url('content/transfonter.org-20210416-055250_LaoMN/LaoMN.ttf') format('truetype'),
         
         /*https://stackoverflow.com/questions/27158639/font-face-not-working-on-ios*/
-        /*url('./content/transfonter.org-20210416-055250_LaoMN/LaoMN.svg#LaoMN') format('svg');*/
-        url('./content/transfonter.org-20210416-055250_LaoMN/LaoMN#LaoMN.svg') format('svg');
+        /*url('./content/transfonter.org-20210416-055250_LaoMN/LaoMN.svg#LaoMN') format('svg');
+        https://stackoverflow.com/questions/4412511/font-face-not-embedding-on-mobile-safari-iphone-ipad*/
+        url('content/transfonter.org-20210416-055250_LaoMN/LaoMN#LaoMN.svg') format('svg'),
+    
+        url("content/LaoMN.otf") format("opentype"); 
+    
     font-weight: normal;
     font-style: normal;
     /*font-display: swap;*/
